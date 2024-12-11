@@ -46,7 +46,7 @@ function PostsList() {
     //Delete
     function deletePost(id) {
         axios.delete(`${API_BASE_URI}posts/${id}`)
-            .then((res) => {
+            .then(() => {
                 fetchPosts()
             })
             .catch((err) => {
@@ -55,23 +55,21 @@ function PostsList() {
     }
 
     return (
-        <>
-            <section className={sectionsStyle.search_section}>
+        <div className={style.posts_list}>
+            <div className="container">
                 <SearchBar search={search} handleSearch={handleSearch} filterPosts={filterPosts} />
-            </section>
+            </div>
 
-            <section>
-                <div className="container">
-                    <ul className="row">
-                        {filteredPosts.map((post, i) => (
-                            <li key={i} className="col-4">
-                                <Card item={post} deleteItem={deletePost}/>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </section>
-        </>
+            <div className="container">
+                <ul className="row">
+                    {filteredPosts.map((post, i) => (
+                        <li key={i} className="col-4">
+                            <Card item={post} deleteItem={deletePost} />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
     )
 }
 

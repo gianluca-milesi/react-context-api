@@ -16,7 +16,7 @@ function PostsPage() {
 
 
 
-                <section className={sectionsStyle.posts_list}>
+                <section className={sectionsStyle.posts_section}>
                     <PostsList />
                 </section>
             </main>
