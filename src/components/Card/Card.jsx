@@ -1,8 +1,11 @@
 import style from "./Card.module.css"
 import { API_BASE_URI } from "../../config.js"
+//React router
 import { Link } from "react-router-dom"
-import GlobalContext from "../../context/GlobalContext.js"
+//Hooks
 import { useContext } from "react"
+//Context
+import GlobalContext from "../../context/GlobalContext.js"
 
 
 function Card({ item = {} }) {

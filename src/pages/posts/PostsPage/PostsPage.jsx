@@ -1,8 +1,5 @@
 import style from "./PostsPage.module.css"
-import { useEffect, useState } from "react"
-import axios from "axios"
-import sectionsStyle from "../../Sections.module.css"
-import { API_BASE_URI } from "../../../config.js"
+//Components
 import PostsList from "../../../components/PostsList/PostsList.jsx"
 
 
@@ -10,13 +7,13 @@ function PostsPage() {
     return (
         <>
             <main>
-                <section className={sectionsStyle.title_section}>
-                    <h1>Posts Page</h1>
+                <section className={style.title_section}>
+                    <div className="container">
+                        <h1>Posts Page</h1>
+                    </div>
                 </section>
 
-
-
-                <section className={sectionsStyle.posts_section}>
+                <section className={style.posts_section}>
                     <PostsList />
                 </section>
             </main>

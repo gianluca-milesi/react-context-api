@@ -1,10 +1,12 @@
 import style from "./PostsShow.module.css"
-import sectionsStyle from "../../Sections.module.css"
 import placeholder from "../../../assets/placeholder.png"
+//Axios
 import axios from "axios"
+import { API_BASE_URI } from "../../../config"
+//Hooks
 import { useState, useEffect } from "react"
 import { useParams, useNavigate } from "react-router-dom";
-import { API_BASE_URI } from "../../../config"
+//Components
 import Tags from "../../../components/Tags/Tags.jsx"
 
 
