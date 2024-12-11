@@ -1,0 +1,14 @@
+.not_found_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.not_found_body span {
+    font-weight: 100;
+}
+
+.link:hover {
+    color: gray;
+}

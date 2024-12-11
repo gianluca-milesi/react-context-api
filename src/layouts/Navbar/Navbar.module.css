@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul>*{
+    padding: 0.5rem 0.25rem;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.navbar ul>*:hover {
+    background-color: #212121;
+}
+
+.main_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: gray;
+}
+
+.active {
+    color: white;
+}

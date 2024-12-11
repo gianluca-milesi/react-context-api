@@ -1,0 +1,34 @@
+.tag_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.tag_item {
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    padding: 0 0.5rem;
+    border-radius: 10px;
+    background-color: rgb(144, 128, 238);
+    color: white;
+}
+
+
+/* UTILITIES */
+/* .Dolci {
+    background-color: cornflowerblue;
+}
+
+.Torte {
+    background-color: gold;
+} */
+
+.css {
+    background-color: mediumslateblue;
+}
+
+.php {
+    background-color: cornflowerblue;
+}
