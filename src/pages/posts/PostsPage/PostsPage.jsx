@@ -8,28 +8,10 @@ import PostsList from "../../../components/PostsList/PostsList.jsx"
 
 function PostsPage() {
 
-    // const [posts, setPosts] = useState([])
-
 
     // //Search&Filter
     // const [search, setSearch] = useState("")
     // const [filteredPosts, setFilteredPosts] = useState([posts])
-
-    // //FETCH
-    // function fetchPosts() {
-    //     axios.get(`${API_BASE_URI}posts`)
-    //         .then((res) => {
-    //             setPosts(res.data)
-    //             setFilteredPosts(res.data)
-    //         })
-    //         .catch((err) => {
-    //             console.error(err)
-    //         })
-    // }
-
-    // useEffect(() => {
-    //     fetchPosts()
-    // }, [])
 
 
     // //HANDLERS
@@ -71,6 +53,8 @@ function PostsPage() {
                 <section className={sectionsStyle.title_section}>
                     <h1>Posts Page</h1>
                 </section>
+
+
 
                 <section className={sectionsStyle.posts_list}>
                     <PostsList />
