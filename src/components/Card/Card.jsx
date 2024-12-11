@@ -1,11 +1,14 @@
 import style from "./Card.module.css"
 import { API_BASE_URI } from "../../config.js"
 import { Link } from "react-router-dom"
+import GlobalContext from "../../context/GlobalContext.js"
+import { useContext } from "react"
 
 
-function Card({ item = {}, deleteItem = () => { } }) {
+function Card({ item = {} }) {
 
     const { id, title, image, content } = item
+    const { deletePost } = useContext(GlobalContext)
 
     return (
         <div className={style.card}>
@@ -16,7 +19,7 @@ function Card({ item = {}, deleteItem = () => { } }) {
                     <p>{content}</p>
                 </div>
             </Link>
-            <button className={style.delete_button} onClick={() => deleteItem(id)}>Elimina</button>
+            <button className={style.delete_button} onClick={() => deletePost(id)}>Elimina</button>
         </div>
     )
 }

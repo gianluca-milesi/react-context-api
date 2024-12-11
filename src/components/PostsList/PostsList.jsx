@@ -43,16 +43,16 @@ function PostsList() {
         fetchPosts()
     }, [])
 
-    //Delete
-    function deletePost(id) {
-        axios.delete(`${API_BASE_URI}posts/${id}`)
-            .then(() => {
-                fetchPosts()
-            })
-            .catch((err) => {
-                console.error(err)
-            })
-    }
+    // //Delete
+    // function deletePost(id) {
+    //     axios.delete(`${API_BASE_URI}posts/${id}`)
+    //         .then(() => {
+    //             fetchPosts()
+    //         })
+    //         .catch((err) => {
+    //             console.error(err)
+    //         })
+    // }
 
     return (
         <div className={style.posts_list}>
@@ -64,7 +64,7 @@ function PostsList() {
                 <ul className="row">
                     {filteredPosts.map((post, i) => (
                         <li key={i} className="col-4">
-                            <Card item={post} deleteItem={deletePost} />
+                            <Card item={post} />
                         </li>
                     ))}
                 </ul>

@@ -20,6 +20,7 @@ function App() {
 
   const [posts, setPosts] = useState([])
 
+  //FETCH
   function fetchPosts() {
     axios.get(`${API_BASE_URI}posts`)
       .then((res) => {
@@ -31,11 +32,22 @@ function App() {
       })
   }
 
+  //FUNCTIONS
+  //Delete
+  function deletePost(id) {
+    axios.delete(`${API_BASE_URI}posts/${id}`)
+      .then(() => {
+        fetchPosts()
+      })
+      .catch((err) => {
+        console.error(err)
+      })
+  }
 
 
 
   return (
-    <GlobalContext.Provider value={{ posts, fetchPosts }}>
+    <GlobalContext.Provider value={{ posts, fetchPosts, deletePost }}>
       <BrowserRouter>
         <Routes>
           <Route element={<DefaultLayout />}>
