@@ -16,7 +16,7 @@ function Card({ item = {}, deleteItem = () => { } }) {
                     <p>{content}</p>
                 </div>
             </Link>
-            {/* <button className={style.delete_button} onClick={() => deleteItem(id)}>Elimina</button> */}
+            <button className={style.delete_button} onClick={() => deleteItem(id)}>Elimina</button>
         </div>
     )
 }

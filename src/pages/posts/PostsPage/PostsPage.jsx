@@ -7,46 +7,6 @@ import PostsList from "../../../components/PostsList/PostsList.jsx"
 
 
 function PostsPage() {
-
-
-    // //Search&Filter
-    // const [search, setSearch] = useState("")
-    // const [filteredPosts, setFilteredPosts] = useState([posts])
-
-
-    // //HANDLERS
-    // //Search
-    // function handleSearch(event) {
-    //     const value = event.target.value
-    //     setSearch(value)
-    //     // console.log(value)
-    //     if (value === "") {
-    //         setFilteredPosts(posts)
-    //     }
-    // }
-
-
-    // //FUNCTIONS
-    // //Filter
-    // function filterPosts() {
-    //     const filtered = posts.filter((post) =>
-    //         post.title.toLowerCase().includes(search.toLowerCase())
-    //     );
-    //     setFilteredPosts(filtered);
-    // }
-
-    // //Delete
-    // function deletePost(id) {
-    //     axios.delete(`${API_BASE_URI}posts/${id}`)
-    //         .then((res) => {
-    //             fetchPosts()
-    //         })
-    //         .catch((err) => {
-    //             console.error(err)
-    //         })
-    // }
-
-
     return (
         <>
             <main>
